@@ -4,9 +4,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+  <script src="https://kit.fontawesome.com/0ca95d7137.js" crossorigin="anonymous"></script>
+
+
+    <style>
+      @font-face {
+          font-family: dogerai;
+          src: url(go3v2.ttf);
+      }
+        
+      .dogerai {
+          font-family: dogerai !important;
+      }
+    </style>
+
+
   <title>Dogerai</title>
 </head>
-<body>
-  <h1>Hello Dogerai</h1>
+<body class="bg-gray-800">
+    <nav class="sticky top-0 bg-white border-gray-200 px-2 sm:px-4 py-2.5 bg-gray-800">
+      <div class="container flex items-center justify-between mx-auto">
+          <a href="http://eainpyanlann.info" class="flex items-center">
+              <span class="self-center text-xl font-semibold whitespace-nowrap text-gray-800 ml-3 hidden lg:block text-red-600 dogerai">Dogerai</span>
+          </a>
+          <div class="w-full md:block md:w-auto " id="navbar-default">
+              <ul class="flex justify-end p-4 flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+                  <li><a href="index.html" class="block py-2 pl-3 pr-4 rounded font-bold text-red-600">Home</a></li>
+                  <li><a href="privacy-policy.html" class="block py-2 pl-3 pr-4 rounded md:bg-transparent text-white">privacy-policy</a></li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <div class="py-10 flex flex-col lg:flex-row justify-center min-h-screen -mt-20 items-center">
+        <div class="translate-x-96 opacity-0 duration-1000 w-full lg:w-1/2 mt-20 lg:mt-0 flex justify-center">
+            <img src="images/dogerai_website.png" class="mr-0 lg:mr-20 w-2/3" alt="">
+        </div>
+        <div class="-translate-x-96 opacity-0 duration-1000 w-full lg:w-1/2 pl-0 h-full flex flex-col items-center lg:items-start text-gray-800 font-bold leading-snug text-3xl lg:text-5xl">
+            <span class="mg-2 lg:mb-5 dogerai text-red-600 text-6xl">DOGERAI</span>
+            <span class="text-sm font-light text-white px-10 my-10 md:px-20 lg:mr-20 lg:my-0 lg:px-0">
+              "Dogerai" is a fast-paced head slicing game where players take on the role of a skilled samurai dog who must dodge and slice their way through a barrage of flying MAL heads. With intuitive swipe controls and a variety of challenging game modes, players must use their reflexes and timing to slice as many head as possible while avoiding bombs. 
+            </span>
+            <!-- <span class="ml-10 text-3xl mb-5 font-bold">EAIN PYAN LANN</span> -->
+            <div class="flex flex-row items-center justify-center h-20">
+                <a href="https://play.google.com/store/apps/details?id=com.studiorevo.eainpyanlann&hl=en">
+                    <img src="images/playstore.png" class="h-10" alt="">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.studiorevo.eainpyanlann&hl=en" class="ml-3">
+                    <div class="h-10 px-5 flex items-center justify-center rounded-md bg-red-500">
+                        <span class="text-white text-sm">Direct Download</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $(".-translate-x-96").removeClass("opacity-0");
+        $(".translate-x-96").removeClass("opacity-0");
+
+        $(".-translate-x-96").removeClass("-translate-x-96");
+        $(".translate-x-96").removeClass("translate-x-96");
+    });
+</script>
+
 </html>
